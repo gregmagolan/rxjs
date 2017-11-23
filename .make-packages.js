@@ -92,6 +92,7 @@ mkdirp.sync(PKG_ROOT);
 
 // Copy over the sources
 copySources('src/', PKG_ROOT + 'src/');
+fs.copySync('bazel/', PKG_ROOT + 'src/');
 copySources(CJS_ROOT, CJS_PKG);
 fs.copySync(TYPE_ROOT, TYPE_PKG);
 
